@@ -1,0 +1,213 @@
+@font-face{
+   font-family: 'Overlock-Regular-OTF';
+   src:url(../font/Overlock-Regular-OTF.otf) format('opentype');
+}
+.bb-bookblock {
+	width:800px;
+	height: 500px;
+	margin: 20px 0 0 0;
+}
+
+ul.bb-custom-grid {
+	list-style: none;
+	margin: 20px auto;
+	padding: 0;
+	width: 800px;
+}
+
+/* Micro clearfix hack by Nicolas Gallagher http://nicolasgallagher.com/micro-clearfix-hack/ */
+ul.bb-custom-grid:before,
+ul.bb-custom-grid:after {
+	content: " ";
+    display: table;
+}
+
+ul.bb-custom-grid:after {
+	clear: both;
+}
+/* end clearfix hack */
+
+ul.bb-custom-grid li {
+	float: left;
+	width: 800px;
+	height: 550px;
+	padding: 10px 20px 50px 20px;
+	background: #f8f8f8 url(../images/demo2/noise.jpg);
+	position: relative;
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+	margin-bottom: 20px;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+}
+
+ul.bb-custom-grid li:nth-child(odd) {
+	margin-right: 20px;
+}
+
+ul.bb-custom-grid li:before,
+ul.bb-custom-grid li:after{
+	content: '';
+	position: absolute;
+	z-index: -2;
+	bottom: 15px;
+	left:  10px;
+	width: 50%;
+	height: 20%;
+	box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
+	-webkit-transform: rotate(-3deg);
+	-moz-transform: rotate(-3deg);
+	-ms-transform: rotate(-3deg);
+	-o-transform: rotate(-3deg);
+	transform: rotate(-3deg);
+}
+
+ul.bb-custom-grid li:after {
+	right: 10px;
+	left: auto;
+	-webkit-transform: rotate(3deg);
+	-moz-transform: rotate(3deg);
+	-ms-transform: rotate(3deg);
+	-o-transform: rotate(3deg);
+	transform: rotate(3deg);
+}
+
+ul.bb-custom-grid li a {
+	display: block;
+}
+
+hr{ 
+	height:0px;
+	text-align:left;
+	border-top:0px;
+	border-bottom:rgba(0,0,0,0.1) dashed 1px;
+}
+
+ul.bb-custom-grid nav {
+	text-align: center;
+	margin-top: 12px;
+	padding-bottom: 5px;
+	border-bottom: 1px dashed rgba(0,0,0,0.1);
+}
+
+ul.bb-custom-grid nav span {
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	background: #f0f0f0;
+	margin: 3px;
+	cursor: pointer;
+	box-shadow: 
+		inset 0 1px 1px rgba(0,0,0,0.2), 
+		0 2px 1px rgba(255,255,255,0.9);
+}
+
+ul.bb-custom-grid nav span.bb-current {
+	background: #bdd70d;
+}
+
+#ima1 input[type=text]{
+    font-size: 13px; 
+	padding: 10px 2px;
+    font-weight: 400;
+    display: block;
+    width: 50%;
+	margin-top: 5px;
+    margin-bottom: 5px;
+	margin-left: 15px;
+    border: 2px solid #ebe6e2;
+    border-radius: 5px;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+	color: #999;
+	text-transform:lowercase;
+	font-family: 'Overlock-Regular-OTF';
+
+}
+#ima1 input[type=text]:hover {
+    border-color: #CCC;
+}
+#ima1 input[type=text]:focus{
+    border-color: #BBB;
+    outline: none; 
+}
+
+.ima{
+	float: left;
+}
+
+#bien, #mal{
+	float: left;
+	margin: 14px 3px;
+}
+
+.form-1 {
+    width: 90%;
+	text-align: left;
+    margin: 10px auto;
+    padding: 5px;
+    position: relative; 
+    box-shadow: 
+        0 0 1px rgba(0, 0, 0, 0.3), 
+        0 3px 7px rgba(0, 0, 0, 0.3), 
+        inset 0 1px rgba(255,255,255,1),
+        inset 0 -3px 2px rgba(0,0,0,0.25);
+    border-radius: 5px;
+    background: white;
+    background: -moz-linear-gradient(#eeefef, #ffffff 10%);
+    background: -ms-linear-gradient(#eeefef, #ffffff 10%);
+    background: -o-linear-gradient(#eeefef, #ffffff 10%);
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#eeefef), color-stop(0.1, #ffffff));
+    background: -webkit-linear-gradient(#eeefef, #ffffff 10%);
+    background: linear-gradient(#eeefef, #ffffff 10%);
+}
+
+.form-1 .field {
+ 	position: relative;
+	text-align: left;
+}
+
+.form-1 input[type=text]{
+    font-size: 13px;
+    font-weight: 400;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.8);
+    width: 80%;
+    padding: 10px 5px;
+    border: none;
+    box-shadow: 
+        inset 0 0 5px rgba(0,0,0,0.1),
+        inset 0 3px 2px rgba(0,0,0,0.1);
+    border-radius: 3px;
+    background: #f9f9f9;
+    color: #777;
+	text-transform: lowercase;
+    -webkit-transition: color 0.3s ease-out;
+    -moz-transition: color 0.3s ease-out;
+    -ms-transition: color 0.3s ease-out;
+    -o-transition: color 0.3s ease-out;
+    transition: color 0.3s ease-out;
+}
+
+.form-1 input[type=text] {
+    margin-bottom: 10px;
+}
+
+.form-1 input[type=text]:focus{
+    color: #42A2BC;
+}
+
+.form-1 input[type=text]:focus {
+    outline: none;
+}
+
+.form-1 input[type=text].ordena{
+	margin-left: 20px;
+    width: 5%;
+}
+
+.form-1 label.lbl{
+	display: block;
+	float: left;
+	width: 200px;
+}

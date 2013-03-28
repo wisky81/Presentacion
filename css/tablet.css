@@ -1,0 +1,44 @@
+
+@media only screen and (max-width: 768px){
+	#contenido_fyq{
+		background-size:100% auto;
+		-moz-background-size:100% auto;
+		-webkit-background-size:100% auto;
+		background-repeat:no-repeat;
+		width:760px;
+		height:1020px;
+		text-align:center;
+		margin:0 auto;
+		background:url(../img/bg_contenido.jpg);
+		overflow:auto;
+	
+
+	}
+
+img, video, object { 
+	max-width:90%; 
+}
+
+
+
+#cont_pages{	
+		background-size:100% auto;
+		-moz-background-size:100% auto;
+		-webkit-background-size:100% auto;
+		background-repeat:no-repeat;
+		width:760px;
+		text-align:center;
+		margin:0 auto;
+		background:url(../img/bg_contenido.jpg);
+
+
+}
+
+#pagewrap{
+	width:760px; 
+	height:1024px; 
+	display:block; 
+}
+
+
+}

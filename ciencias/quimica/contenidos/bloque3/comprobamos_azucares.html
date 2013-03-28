@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, mimimun-scale=1.0, maximun-scale=1.0">
+<link rel="stylesheet" href="../../../../css/style.css" ype="text/css" charset="utf-8"/>
+<link href="../../../../css/tablet.css" rel="stylesheet" type="text/css">
+<title>COMPROBAMOS LA PRESENCIA DE AZÚCARES REDUCTORES EN LOS ALIMENTOS</title>
+</head>
+
+<body onLoad="inicia();" >
+<div id="contenido_fyq">
+<div class="centrar_imgs"><img src="../../img/img_bloque_3/titulo_practica_28.png" width="655" height="160"></div>
+<div class="texto_plano" >
+<p class="titulos">Introducción</p>
+<p>Los azúcares como la glucosa, fructosa y sacarosa se acumulan especialmente en el jugo celular; los almidones son los carbohidratos de reserva y se encuentran en forma de plastidios; la hemicelulosa y pectinas son los polisacáridos que conforman el material estructural y las gomas son productos de desecho.  Tradicionalmente las frutas se han valorado por su atractiva apariencia, textura, valor nutritivo y fundamentalmente por su sabor.  En todos estos atributos de calidad los carbohidratos desempeñan un papel relevante, por ejemplo, el sabor está dado básicamente por un balance entre azúcares y ácidos orgánicos.  El sabor característico de y diferente de las frutas se debe a la gran variación en composición y concentración de los azúcares; el color atractivo se debe principalmente a los glucósidos (antocianinas y antoxantinas) y la firmeza está determinada por los polisacáridos estructurales.</p>
+<p class="centrar_imgs"> <img src="../../img/img_bloque_3/gluco_frcto_saca.png" width="956" height="216"></p>
+ <p class="titulos">Objetivo</p>
+ <p class="centrar_imgs"> <img src="../../img/img_bloque_3/balazo_objetivos.png"></p>
+ <p class="centrar_imgs">  <img src="../../img/img_bloque_3/lista_material_comprobamos_azucares.png" width="637" height="323">  </div>
+ <div class="texto_plano">
+<div class="titulos">Procedimiento</div><br/>
+<p class="sangria_doble">- Usaremos como reactivo el Fehling A y B.</p>
+<p class="sangria_triple"><b>1) </b>Toma dos tubos de ensayos. </p>
+<p class="sangria_triple"><b>2) </b>A uno agrégale agua, dos gotas de Fehling A y dos gotas de Fehling B. </p>
+<p class="sangria_triple"><b>3) </b>Toma otro tubo de ensayo y agrégale agua, una pizca de glucosa y dos gotas de Fehling A y dos gotas de Fehling B.</p>
+<p class="sangria_triple"><b>4) </b>Calienta el mechero de alcohol ambos tubos y observa si el color del alimento con reactivo permanece azul o se torna rojo ladrillo.</p>
+<p class="centrar_imgs"> <img src="../../img/img_bloque_3/fig_1_comprobacion_azucares.png" width="360" height="183"></p>
+<p class="centrar_imgs"> <img src="../../img/img_bloque_3/cuestionario_comprobar_azucares.png" width="740" height="286"></p>
+</div>
+<div class="texto_plano">
+<p><b>RESULTADOS Y CONCLUSIONES</b></p>
+<p class="sangria_doble">Si toma color rojo ladrillo, contiene azúcar reductor.</p>
+<p class="sangria_doble">Si se mantiene azul o verdoso, no contiene azúcares reductores.</p>
+<p class="sangria_doble">Veamos que alimentos tienen esas sustancias.</p>
+<p class="centrar_imgs"> <img src="../../img/img_bloque_3/tabla_1_comprobacion_azucares.png" width="579" height="132"></p>
+<p class="centrar_imgs"> <img src="../../img/img_bloque_3/platanos_comprobar_azucares.png"></p>
+<p class="sangria_doble">El caramelo debe colorarse unos minutos en agua pura para obtener el jugo de caramelo, que le agregarás agua y reactivo.</p>
+<p class="centrar_imgs"> <img src="../../img/img_bloque_3/caramelos.png"></p>
+
+</div>
+</div >
+<script>
+       function inicia(){
+          var xIni;
+          var yIni;
+          var canvas = document.getElementById('contenido_fyq');
+          canvas.addEventListener('touchstart', function(e){
+              if (e.targetTouches.length == 1) {
+          var touch = e.targetTouches[0];
+          xIni = touch.pageX;
+          yIni = touch.pageY;
+       }
+          }, false);
+          
+          canvas.addEventListener('touchmove', function(e){
+              if (e.targetTouches.length == 1) {
+          var touch = e.targetTouches[0];
+          if((touch.pageX>xIni+20) && (touch.pageY> yIni-5) && (touch.pageY<yIni+5)){
+             /*alert("el swipe se genera hacia la izquierda");*/
+    	 location.href='../../../../index.html';
+          }
+          
+          if((touch.pageX<xIni-20) && (touch.pageY> yIni-5) && (touch.pageY<yIni+5)){
+             /*alert("el swipe se genera hacia la derecha");*/
+	location.href='../../../../index.html';
+          }
+       }
+          }, false);
+          
+                     
+       }
+    </script>
+
+</body>
+</html>

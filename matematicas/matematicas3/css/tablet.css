@@ -1,0 +1,165 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@media only screen and (max-width: 768px){
+	#container{
+		background-size:100% auto;
+		-moz-background-size:100% auto;
+		-webkit-background-size:100% auto;
+		background-repeat:no-repeat;
+		width:700px;
+		text-align:center;
+		margin:0 auto;
+	}
+	
+	#temas{
+		margin: 70px 0 0 120px;
+	}
+	
+	#pagewrap{
+		width: 700px;
+		-moz-background-size: 50% auto;
+		-webkit-background-size: 50% auto;
+		background-size: 50% auto;
+	}
+	
+	#img_bloque{
+		width: 700px;
+	}
+	
+	#boton {
+		padding: 133px 0 0 220px
+	}
+	
+	.bloke1 a{
+		background: url(../img/bloques1_med.png);
+		height: 109px;
+		width: 120px;
+	}
+	
+	.bloke1 a:hover{
+		height: 129px;
+		background-position: 0 -123px;
+	}
+	
+	.bloke2 a{
+		background: url(../img/bloques2_med.png);
+		height: 109px;
+		width: 120px;
+		background-position: 0 0;
+	}
+	
+	.bloke2 a:hover{
+		height: 129px;
+		background-position: 0 -126px;
+	}
+	
+	.bloke3 a{
+		background: url(../img/bloques3_med.png);
+		height: 109px;
+		width: 120px;
+		background-position: 0 0;
+	}
+	
+	.bloke3 a:hover{
+		height: 129px;
+		background-position: 0 -123px;
+	}
+	
+	.bloke4 a{
+		background: url(../img/bloques4_med.png);
+		height: 109px;
+		width: 120px;
+		background-position: 0 0;
+	}
+	
+	.bloke4 a:hover{
+		height: 129px;
+		background-position: 0 -122px;
+	}
+	
+	.bloke5 a{
+		background: url(../img/bloques5_med.png) no-repeat;
+		height: 109px;
+		width: 120px;
+		background-position: 0 0;
+	}
+	
+	.bloke5 a:hover{
+		height: 129px;
+		background-position: 0 -123px;
+	}
+	
+	header{
+		font-size: 450%;
+		text-align: center;
+	}
+	
+	header span{
+		margin-left: 0;
+		font-size: 100%;
+	}
+	
+	#pie{
+		font-size: 9px;
+	}
+	/****************************************************************
+		 Table aprendizje
+	****************************************************************/
+	#tablaA{
+		width: auto;
+		height: auto;
+		margin: 0 auto;
+		border-left: none;
+		border-bottom: none;
+	}
+	
+	#tablaB{
+		width: auto;
+		height: auto;
+		margin: 0 auto;
+		border-left: none;
+		border-bottom: none;
+	}
+	
+	#aprende{
+		float: none;
+		width: 100%;
+	}
+	
+	.tableAprendizaje, .tableAprendizajeB{
+		float: none; 
+		width: auto;
+		height: auto;
+		border-right: none;
+	}
+	
+	.tableAprendizaje span, .tableAprendizajeB span{
+		width: auto; 
+		height: auto;  
+		float:none; 
+		border-bottom: none;
+		border-right: none;
+		padding: 10px;
+	}
+	.tableAprendizaje ul, .tableAprendizajeB ul{
+		padding: 0;
+	}
+	
+	.tableAprendizaje li, .tableAprendizajeB li{
+		padding: 5px;
+	}
+	.tableAprendizaje p, .tableAprendizajeB p{
+		text-align: left;
+	}
+	
+	#aprendeS{
+		float: none;
+		width: auto; 
+		padding: 0;
+	}
+	#eje{
+		height: 30px; 
+	}
+	
+}	

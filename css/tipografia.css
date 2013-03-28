@@ -1,0 +1,26 @@
+@charset "UTF-8";
+/* CSS Document */
+@font-face{
+	font-family: 'Fabada-regular';
+	src:url(../fuentes/Fabada-regular.ttf) format('truetype');
+	}
+
+@font-face{
+	font-family: 'Muli-Regular';
+	src:url(../fuentes/Muli-Regular.ttf) format('truetype');
+	}
+	
+@font-face{
+	font-family: 'Muli-Italic';
+	src:url(../fuentes/Muli-Italic.ttf) format('truetype');
+	}
+	
+@font-face{
+	font-family: 'Muli-Light';
+	src:url(../fuentes/Muli-Light.ttf) format('truetype');
+	}	
+
+@font-face{
+	font-family: 'Lato-Regular';
+	src:url(../fuentes/Lato-Regular.ttf) format('truetype');
+	}

@@ -1,0 +1,114 @@
+/* CSS Document */
+
+
+@import url("tipografia.css");
+
+
+/*ESTILOS DE LA PAGINA DE BLOQUES DE CIENCIAS NATURALES*/
+header, section, footer, aside, nav, article, figure, div{
+	display: block;
+	padding: 0;
+	margin: 0;
+}
+
+img, video, object { 
+	max-width:100%; 
+}
+
+img { 
+	border:0px; 
+}
+
+body{
+	background:url(../img/bg_main.jpg);
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	font-family: 'Fabada-regular';
+	font-size:14px;
+}
+
+#container{
+		background-size:100% auto;
+		-moz-background-size:100% auto;
+		-webkit-background-size:100% auto;
+		background-repeat:no-repeat;
+		width:1024px;
+		text-align:center;
+		margin:0 auto;
+	}
+
+/*ESTILOS PARA FISICA*/
+#contenido_fyq{
+	width:1024px;
+	height:768px;
+	background:url(../img/bg_contenido.jpg);
+	overflow:auto;
+	margin:0 auto;
+
+}
+
+.centrar_imgs{
+	text-align:center;
+
+}
+.titulos{
+	color:#376698;
+	font-size:18px;
+	font-weight:bolder;
+	text-align:left;
+
+}
+.texto_plano{
+	color:#393939;
+	font-size:14px;
+	text-align:justify;
+
+}
+.sangria{
+	padding-left:15px;
+}
+.sangria_doble{
+	padding-left:30px;
+}
+.sangria_triple{
+	padding-left:50px;
+}
+.sangria_cuatruple{
+	padding-left:85px;
+}
+
+
+
+/*ESTILOS PARA ESPAÑOL Y MATEMATICAS*/
+#cont_pages{
+	width:1024px;
+	height:760px;
+	margin:0 auto;
+	text-align:center;
+	background:url(../img/bg_contenido.jpg);
+}
+
+#pagewrap{
+	width:1024px; 
+	height:760px; 
+	display:block; 
+}
+
+#competencias{
+	width:980px; 
+	height:550px; 
+	display:block;
+	float:left;
+}
+
+#siguiente_comp{
+	width:42px;
+	height:35px;
+	margin-top:225px;
+	float:left;
+	background:url(../espanol/espanol3/img/img_bloque1/btn_sig.png);
+	}
+
+

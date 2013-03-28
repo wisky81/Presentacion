@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+    <title>sistema de ecuaciones de 2 incognitas</title>
+    <link rel="stylesheet" href="css/mate2.css" type="text/css" charset="utf-8"/>
+    <link rel="stylesheet" href="../../css/style.css" type="text/css" charset="utf-8"/>
+</head>
+
+<body>
+	<div id="carousel">
+        <ul>
+	    	<li class="pane1">
+           		<div><img src="img/titulo_ecuaciones_dos_inco.png" width="655" height="142" /></div>
+				<div><img src="img/fig_num.png"></div>
+                <div style="float:right;"><a href="../../index.html"><span class="home"></span></a></div>
+                <div class="sig posicion1"></div>
+ 			</li>
+            <li class="pane2"><br />
+  				<div class="main">
+                	<div id="an-anim" class="dis">
+                        <div class="an-stage">
+                        	<div id="an-obj-4"><img src="img/titulo.png" width="700" height="156"></div>
+                      		<div id="an-obj-2">
+                            	<img  height="257" width="194"  src="img/robot.png">
+                           		<div id="an-obj-3"><img  height="18" width="42"  src="img/boca_rb.png"></div>
+                       		</div>
+                            <p>Completa la siguente tabla, sustituyendo valores para "x" y "y", de tal modo, que se cumpla con la igualdad de la ecuación.</p>
+                            <div id="an-obj-11">
+                                <div id="an-obj-12"><span>x + y = 12</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sig"></div>
+                    <a href="../../index.html"><div class="homeB"></div></a>
+                    <div class="atras"></div>
+                    <div id="cerrar"><a  href = "javascript:void(0)" onclick = "document.getElementById('light2').style.display='block';document.getElementById('fade2').style.display='block'"><img src="img/monito.png" width="180" height="70"></a></div>
+                </div>
+			</li>
+            <li class="pane3" ><br />
+           		<div class="main">
+                	<div class="contentDiv">
+						<span>Clic sobre los valores que consideres que cumple con la igualdad de la ecuación</span><br /><br />
+                        <a href = "#" onclick = "overlay();"><img src="img/tabla1.png" width="244" height="336"></a>
+                      	<a href = "#" onclick = "overlay();"><img src="img/tabla2.png" width="244" height="336"></a>
+                        <a href = "#" onclick = "overlay1();"><img src="img/tabla3.png" width="244" height="336"></a>
+                    </div>
+                	<div class="sig"></div>
+               	  	<a href="../../index.html"><div class="homeB"></div></a>
+                  	<div class="atras"></div>
+                </div>
+            </li>
+            <li><br />
+            	<div class=" main">
+                	<div class="contentDiv">
+						<span>¡Ahora te propongo otro reto!</span><br />
+                      	<span style="font-size: 16px;">Busca una opción que cumpla con las 2 igualdades de las siguientes ecuaciones.</span><br /><br />
+                        <div class="mask1"><span>x + y  = 10</span></div>
+                       	<div class="mask1"><span>x - y  = 6</span></div><br />
+                        <div style="text-align:center"> <img src="img/balazo1.png" width="420" height="300"></div>
+                    </div>
+                	<div class="sig"></div>
+                	<a href="../../index.html"><div class="homeB"></div></a>
+                    <div class="atras"></div>
+            	</div>
+            </li>
+            <li><br />
+            	<div class=" main">
+                	<div class="contentDiv">
+						<span>Introduce  la respuesta:</span><br />
+                      	<span>x = &nbsp; <input type="text" id="valor" name="valor" maxlength="1" /></span>
+                      	<span>y = &nbsp;<input type="text" id="valor1" name="valor" maxlength="1"/></span>
+                        <input type="button" id="resultado" name="resultado" value="Consulta" />
+                  		<div id="incorrecto">
+                   	    	<img src="img/balazoInco.png" width="420" height="300">
+                            <input type="button" id="new" name="new" value="Volver a intentar" />
+                        </div>
+                        <div id="correcto">
+                        	<span>La respuesta es <u>8</u> y <u>2</u>:</span><br />
+                            <span>8 + 2 = 10</span><br />
+                            <span>8 - 2 = 6</span><br />
+                        	<img src="img/balazoC.png" width="420" height="360"></div>
+                    	</div>
+                	<a href="../../index.html"><div class="homeB phome"></div></a>
+                	<div class="atras posicion2"></div>
+            	</div>
+            </li>
+		</ul>
+	</div>
+
+<script src="../../js/jquery-1.8.3.js"></script>
+<script src="js/modernizr.js"></script>
+<script src="js/jquery.hammer.js"></script>
+<script src="js/script.js"></script>
+	<script src="js/ga.js"></script>
+    <div>
+        <div id="light" class="white_content"><img src="img/balazoI.png" width="420" height="280"><a href = "javascript:void(0)" onclick = "document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'" class="close">X</a></div>
+        <div id="fade" class="black_overlay"></div>
+</div>
+    <div id="light1" class="white_content"><img src="img/balazo.png" width="420" height="340"><a href = "javascript:void(0)" onclick = "document.getElementById('light1').style.display='none';document.getElementById('fade1').style.display='none'" class="close">X</a></div>
+   	<div id="fade1" class="black_overlay"></div>
+    <div id="light2" class="white_content"><img src="img/balazo_retro.png" width="420" height="320"><a href = "javascript:void(0)" onclick = "document.getElementById('light2').style.display='none';document.getElementById('fade2').style.display='none'" class="close">X</a></div>
+   	<div id="fade2" class="black_overlay"></div>
+</body>
+</html>

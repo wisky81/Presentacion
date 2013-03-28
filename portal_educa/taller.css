@@ -1,0 +1,49 @@
+@charset "UTF-8";
+/* CSS Document */
+article, aside, figure, footer, header, nav, section, span, div {  /*que estos elementos se comporten como bloques*/
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background:url(../img/bg_main.jpg);
+	text-align:center;
+	margin-bottom:0px;
+	margin-left:0px;
+	margin-right:0px;
+	margin-top:0px;
+	
+}
+.contenedorportal{
+	width:1024px;
+	height:908px;
+	vertical-align:top;
+	text-align:center;
+	background:url(img/portal_final.jpg);
+	background-repeat:no-repeat;
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	
+	
+	}
+
+#pagewrap{
+	width:1024px;
+	margin: 0 auto;
+	padding: 0;
+}
+
+.contenido{
+	width: 976px;
+	margin: 0 auto;
+}
+.contenido >div{
+	float: left;
+}
+
+/*.btnImg span:hover{
+	color: #333;
+}*/

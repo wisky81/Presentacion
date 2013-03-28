@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, mimimun-scale=1.0, maximun-scale=1.0">
+<link rel="stylesheet" href="../../../../css/style.css" ype="text/css" charset="utf-8"/>
+<link href="../../../../css/tablet.css" rel="stylesheet" type="text/css">
+<title>Cambios de estado</title>
+</head>
+
+<body onLoad="inicia();" >
+
+<div id="contenido_fyq">
+<div class="centrar_imgs"> <img src="../../img/img_bloque_3/titulo_practica_26.png" width="670" height="116"></div>
+
+<div class="texto_plano" >
+<p class="titulos">Introducción</p>
+<p> En Física y Química se denomina cambio de estado a la evolución de la materia entre varios estados de agregación sin que ocurra un cambio en su composición. Los tres estados básicos son el sólido, el líquido y el gaseoso.</p> 
+<p class="centrar_imgs"> <img src="../../img/img_bloque_3/estados.png" width="398" height="193"></p>
+<p> La siguiente tabla indica cómo se denominan los cambios de estado:</p>
+<p class="centrar_imgs"><img src="../../img/img_bloque_3/tabla_cambios.png" width="601" height="285"></p>
+<p>También se puede ver claramente con el siguiente gráfico: </p>  
+<p class="centrar_imgs"> <img src="../../img/img_bloque_3/figura_cambios_estado.png" width="428" height="210"></p>
+</div>
+ <div class="titulos" >Objetivos</div> 
+ <p class="centrar_imgs"> <img src="../../img/img_bloque_3/balazo_objetivos.png"
+></p>
+<div class="centrar_imgs">
+  <img src="../../img/img_bloque_3/lista_material_cambios.png" width="637" height="497"></div><br/>
+ <div class="titulos">Procedimientos</div><br/>
+<div class="texto_plano">
+<p><b>1.</b> Quiebre los cubos de hielo envueltos en el paño, golpeándolos con el martillo. Eche el hielo picado a un vaso de precipitado, lea la temperatura y anote (Figura1)
+ </p>
+<p><b>2.</b> Retire el termómetro y agregue la sal de cocina, mezcle e introduzca el termómetro (Figura2). Observe por algunos minutos la columna de mercurio en el termómetro y anote la temperatura final de equilibrio.</p>
+<p><b>3.</b> Introduzca un tubo de ensayo en la mezcla. Coloque el bulbo del termómetro dentro del tubo de ensayo a ½ centímetro del fondo (Figura 3). Con la jeringa, agregue agua al tubo de ensayo suficiente para cubrir el bulbo del termómetro. Anote la hora y la temperatura inicial del proceso.</p>
+<p><b>4.</b> Mueva suavemente el agua, con el propio termómetro, en el interior del tubo de ensayo, anote de 30 en 30 segundos, la temperatura del agua. Compruebe si hay cambio de estado.</p>
+<p class="centrar_imgs"><img src="../../img/img_bloque_3/figura_dos_cambios.png" width="456" height="168"></p>
+<p class="centrar_imgs"><img src="../../img/img_bloque_3/cuestionario_cambios.png" width="740" height="286"></p>
+<p class="titulos">Comentarios</p>
+<p>En el cambio de estado no ocurre variación de temperatura, el calor cedido o retirado del cuerpo es llamado de calor latente, al plotarse, un gráfico de temperatura por calor cambiado de un cuerpo, que está a priori en, estado sólido, el plató (curva) presentará en un momento una recta paralela al eje del calor. Allí ocurre el cambio de estado.</p>
+<p>Si un sólido es calentado sobre presión constante, el mismo sufre fusión, a una temperatura característica Tf, la cual permanece constante durante el proceso.
+</p>
+<p>Durante la fusión, coexisten los estados sólidos y líquidos del material.</p>
+<p>Cuando un líquido es resfriado sobre presión constante, el sufre solidificación en la misma temperatura, en la cual, el sólido se funde (sobre misma presión). Durante la solidificación, la temperatura permanece constante.</p>
+<p>Tanto la temperatura de fusión como la de solidificación, dependen de la presión, a la que, la sustancia está sometida. Sin embargo, la influencia de la presión sobre el punto de fusión, no se da del mismo modo para todas las substancias, pues algunas substancias se dilatan durante la fusión y otras se contraen.</p>
+</div>
+</div >
+
+
+<script>
+       function inicia(){
+          var xIni;
+          var yIni;
+          var canvas = document.getElementById('contenido_fyq');
+          canvas.addEventListener('touchstart', function(e){
+              if (e.targetTouches.length == 1) {
+          var touch = e.targetTouches[0];
+          xIni = touch.pageX;
+          yIni = touch.pageY;
+       }
+          }, false);
+          
+          canvas.addEventListener('touchmove', function(e){
+              if (e.targetTouches.length == 1) {
+          var touch = e.targetTouches[0];
+          if((touch.pageX>xIni+20) && (touch.pageY> yIni-5) && (touch.pageY<yIni+5)){
+             /*alert("el swipe se genera hacia la izquierda");*/
+    	 location.href='../../../../index.html';
+          }
+          
+          if((touch.pageX<xIni-20) && (touch.pageY> yIni-5) && (touch.pageY<yIni+5)){
+             /*alert("el swipe se genera hacia la derecha");*/
+	location.href='../../../../index.html';
+          }
+       }
+          }, false);
+          
+                     
+       }
+    </script>
+</body>
+</html>

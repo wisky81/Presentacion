@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link href="taller.css" rel="stylesheet" type="text/css">
+<title>Taller de Lectura</title>
+</head>
+<body onLoad="inicia();">
+<div id="pagewrap">
+<div class="contenedorportal" align="center"> </div>
+<footer>
+</footer>
+</div>
+<script>
+       function inicia(){
+          var xIni;
+          var yIni;
+          var canvas = document.getElementById('pagewrap');
+          canvas.addEventListener('touchstart', function(e){
+              if (e.targetTouches.length == 1) {
+          var touch = e.targetTouches[0];
+          xIni = touch.pageX;
+          yIni = touch.pageY;
+       }
+          }, false);
+          
+          canvas.addEventListener('touchmove', function(e){
+              if (e.targetTouches.length == 1) {
+          var touch = e.targetTouches[0];
+          if((touch.pageX>xIni+20) && (touch.pageY> yIni-5) && (touch.pageY<yIni+5)){
+             /*alert("el swipe se genera hacia la izquierda");*/
+    	 location.href='../index.html';
+          }
+          
+          if((touch.pageX<xIni-20) && (touch.pageY> yIni-5) && (touch.pageY<yIni+5)){
+             /*alert("el swipe se genera hacia la derecha");*/
+	location.href='../index.html';
+          }
+       }
+          }, false);
+          
+                     
+       }
+    </script>
+</body>
+</html>

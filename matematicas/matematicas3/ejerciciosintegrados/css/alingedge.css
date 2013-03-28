@@ -1,0 +1,24 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+body{
+	background-color:transparent;
+	margin-right: 0px;
+	margin-left: 0px;
+	margin-top: 0px;
+}
+/* en adobe edge el contenido alinea a la derecha, con esto centras la animacion o enste caso la pagina de los ejercicios */
+#Stage {
+    height: 596px;
+    width: 553px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+#cont_ejercicios{
+	height:700px;
+	overflow:auto;
+
+}
